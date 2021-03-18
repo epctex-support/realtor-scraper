@@ -265,58 +265,55 @@ The structure of each item in Realtor products looks like this:
 
 ```json
 {
-  "url": "https://www.realtor.com/realestateandhomes-detail/9325-W-Desert-Inn-Rd-Apt-116_Las-Vegas_NV_89117_M25429-00790",
+  "url": "https://www.realtor.com/realestateandhomes-detail/9101-Alta-Dr-Unit-304_Las-Vegas_NV_89145_M24672-57224",
   "type": "For Sale",
   "price": {
-    "low": 182000,
-    "high": 182000
+    "low": 1500000,
+    "high": 1500000
   },
-  "beds": "2",
-  "baths": "2",
-  "sqft": "985",
+  "beds": "3",
+  "baths": "3.5",
+  "sqft": "3,100",
   "sqftlot": "",
   "coordinates": {
-    "latitude": "36.128714",
-    "longitude": "-115.295405"
+    "latitude": "36.166961",
+    "longitude": "-115.291125"
   },
   "address": {
-    "street": "9325 W Desert Inn Rd Apt 116",
-    "locality": "Las Vegas",
-    "region": "NV",
-    "postalCode": "89117"
+    "address": "9101 Alta Dr Unit 304, Las Vegas, NV, 89145"
   },
   "photos": [
-    "https://ap.rdcpix.com/0dfd73d0eea05fee575ccee49b1545e5l-m589644527od-w1024_h768.jpg",
-    "https://ap.rdcpix.com/0dfd73d0eea05fee575ccee49b1545e5l-m833703169od-w1024_h768.jpg",
-    "https://ap.rdcpix.com/0dfd73d0eea05fee575ccee49b1545e5l-m589644527od-w1024_h768.jpg",
-    "https://ap.rdcpix.com/0dfd73d0eea05fee575ccee49b1545e5l-m833703169od-w1024_h768.jpg",
-    "https://ap.rdcpix.com/0dfd73d0eea05fee575ccee49b1545e5l-m589644527od-w1024_h768.jpg",
-    "https://ap.rdcpix.com/0dfd73d0eea05fee575ccee49b1545e5l-m833703169od-w1024_h768.jpg"
+    "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m2895103670od-w1024_h768.jpg",
+    "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m3563180654od-w1024_h768.jpg",
+    "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m2895103670od-w1024_h768.jpg",
+    "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m3563180654od-w1024_h768.jpg",
+    "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m2895103670od-w1024_h768.jpg",
+    "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m3563180654od-w1024_h768.jpg"
   ],
   "breadcrumbs": [
     "Nevada",
     "Clark County",
     "Las Vegas",
-    "9325 W Desert Inn Rd Apt 116"
+    "9101 Alta Dr Unit 304"
   ],
   "nearbySchools": [
     {
-      "rating": 6,
-      "name": "Patricia A Bendorf Elementary School",
+      "rating": 9,
+      "name": "John W Bonner Elementary School",
       "grades": "PK - 5",
-      "distance": "0.4"
-    },
-    {
-      "rating": 5,
-      "name": "Clifford J Lawrence Junior High School",
-      "grades": "6 - 8",
-      "distance": "1.5"
-    },
-    {
-      "rating": 4,
-      "name": "Spring Valley High School",
-      "grades": "9 - 12",
       "distance": "2.1"
+    },
+    {
+      "rating": 7,
+      "name": "Palo Verde High School",
+      "grades": "9 - 12",
+      "distance": "2.3"
+    },
+    {
+      "rating": 8,
+      "name": "Sig Rogich Middle School",
+      "grades": "6 - 8",
+      "distance": "2.6"
     }
   ],
   "overview": {
@@ -324,31 +321,32 @@ The structure of each item in Realtor products looks like this:
     "femaZone": "X",
     "floorFactor": "1",
     "Property Type": "Condo",
-    "Days on Realtor.com": "11 Hours",
-    "Year Built": "1991",
-    "Price per sqft": "$185",
+    "Days on Realtor.com": "29 Days",
+    "Year Built": "2006",
+    "Price per sqft": "$484",
     "Status": "For Sale"
   },
-  "description": "BEAUTIFUL 2 bed/2 bath ground floor condo in fantastic location. Popular floor plan with bedrooms located on opposite sides of home and a spacious living room. Many upgrades in this condo such as new wood floors throughout, granite countertops in kitchen and appliances are less than one year old. Washer and Dryer included. New walk in shower with custom made glass door and new tile surround around bathtub. Closet organizers and new closet doors added in both bedrooms. Water heater is 1.5 yrs old. Ceiling fans in both bedrooms and dining area. Keypad lock on entry door. Owner will provide a one year home warranty for buyer's peace of mind. You'll love the beautiful mature grounds with lots of greenery and trees. For relaxing, you will have two pools to choose from, a gym, a sauna and a clubhouse that you can rent out for your private parties. Don't miss this one before it's gone!!",
+  "description": "Incredible Lemar Efaw 3rd floor trophy home. This 3, 100 sqft home features a 3 bed 3.5 bath floor plan with den! This home has been treated to world class upgrades including petrified wood inlaid tile, custom lighting fixtures, custom horizontal fireplace, bespoke wall treatments & more. Custom tile work includes leather & glass beaded selections. The owners suite offers gorgeous mountain views & an extended walk in closet. A gourmet chef kitchen with crisp white cabinetry, contrasting island & SS appliance suite. Updated LED lighting adorn each room with custom ceiling soffits, custom built-ins & a full-size washer & dryer. This home is complete with a 2 car enclosed garage.One Queensridge Place offers resort style amenities with daily complimentary coffee bar, in/out pool & spa, billiards, conference & media room, wine cellar & Poker room. Fitness center featured Pilates/Yoga studio & Men & Womens Roman style spa with steam & sauna.",
   "features": [
     {
       "label": "Bedrooms",
       "values": [
-        "Bedrooms: 2"
+        "Bedrooms: 3"
       ]
     },
     {
       "label": "Other Rooms",
       "values": [
-        "Total Rooms: 5",
-        "Studio"
+        "Total Rooms: 7"
       ]
     },
     {
       "label": "Bathrooms",
       "values": [
-        "Total Bathrooms: 2",
-        "Full Bathrooms: 2"
+        "Total Bathrooms: 4",
+        "Full Bathrooms: 2",
+        "1/2 Bathrooms: 1",
+        "3/4 Bathrooms: 1"
       ]
     },
     {
@@ -359,46 +357,45 @@ The structure of each item in Realtor products looks like this:
         "Garbage Disposer",
         "Microwave",
         "Refrigerator",
+        "Refrigerator - Wine Storage",
         "Washer"
       ]
     },
     {
       "label": "Heating and Cooling",
       "values": [
-        "Cooling Features: Central A/C",
-        "Ceiling Fans: Yes"
+        "Heating Features: Fireplace"
       ]
     },
     {
       "label": "Interior Features",
       "values": [
-        "Flooring: Laminate, Tile, Wood"
+        "Flooring: Tile - Stone, Tile or Stone"
       ]
     },
     {
       "label": "Garage and Parking",
       "values": [
-        "Parking Features: Assigned, Covered"
+        "Parking Features: Valet"
       ]
     },
     {
-      "label": "Exterior and Lot Features",
+      "label": "Home Features",
       "values": [
-        "Patio: Yes"
+        "View: City, Mountain"
       ]
     },
     {
       "label": "Other Property Info",
       "values": [
-        "Annual Tax Amount: 740",
+        "Annual Tax Amount: 8314",
         "County: Clark County",
-        "Directions: West on Sahara past Buffalo, Left on Durango, R on Desert Inn Road",
-        "Source Property Type: Residential",
+        "Directions: From Summerlin Parkway and Rampart Blvd. South on Rampart. Right (West) on Alta Drive. Left (South) at One Queensridge Place community entrance.",
+        "Source Property Type: Common Interest",
         "Property Subtype: condo",
-        "Source Neighborhood: Pacific Harbors At The Lakes",
-        "Parcel Number: 163-17-110-329",
-        "Subdivision: Pacific Harbors At The Lakes",
-        "Zoning: Single Family",
+        "Source Neighborhood: One Queensridge Place Phase 1",
+        "Parcel Number: 138-32-213-029",
+        "Subdivision: One Queensridge Place Phase 1",
         "Property Subtype: Condominium",
         "Source System Name: C2C"
       ]
@@ -406,16 +403,16 @@ The structure of each item in Realtor products looks like this:
     {
       "label": "Building and Construction",
       "values": [
-        "Year Built: 1991",
-        "Property Age: 30",
-        "Roof: Tile",
-        "Levels or Stories: 2.0"
+        "Year Built: 2006",
+        "Property Age: 15"
       ]
     }
   ],
-  "neighborhood": {}
+  "neighborhood": {
+    "Median Listing Price": "$795,000",
+    "Price Per Sq Ft": "$241"
+  }
 }
-
 ```
 
 ###Rental Properties
