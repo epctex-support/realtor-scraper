@@ -19,11 +19,11 @@ The Realtor data scraper supports the following features:
 - Scrape properties by filter - Auto detection of URLs helps you to directly copy/paste the URLs into the scraper to apply any filtering you like.
 
 
-####Realtor specific
+#### Realtor specific
 Don't worry when you get little bit different properties than you saw in browser page. Realtor is ordering properties differently for each user.
 
 ## Bugs, fixes, updates and changelog
-This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/tugkan/realtor-scraper).
+This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/tugkan/realtor-scraper/issues).
 
 ### Incoming Changes
 - Fetching property historical data
