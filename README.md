@@ -59,9 +59,9 @@ The actor optimized to run blazing fast and scrape many as properties as possibl
 ```json
 {
   "startUrls":[
-    { "url":"https://www.realtor.com/realestateandhomes-detail/9325-W-Desert-Inn-Rd-Apt-116_Las-Vegas_NV_89117_M25429-00790"},
-    { "url":"https://www.realtor.com/realestateandhomes-detail/6655-S-Fort-Apache-Rd_Las-Vegas_NV_89148_M14497-02317"},
-    { "url":"https://www.realtor.com/realestateandhomes-detail/2700-Las-Vegas-Blvd-S-Unit-3604_Las-Vegas_NV_89109_M12056-23357"}
+    "https://www.realtor.com/realestateandhomes-detail/9325-W-Desert-Inn-Rd-Apt-116_Las-Vegas_NV_89117_M25429-00790",
+    "https://www.realtor.com/realestateandhomes-detail/6655-S-Fort-Apache-Rd_Las-Vegas_NV_89148_M14497-02317",
+    "https://www.realtor.com/realestateandhomes-detail/2700-Las-Vegas-Blvd-S-Unit-3604_Las-Vegas_NV_89109_M12056-23357"
   ],
   "search":"Las Vegas",
   "mode": "BUY",
@@ -104,10 +104,6 @@ The structure of each item in Realtor products looks like this:
   "beds": "2",
   "baths": "2",
   "sqft": "1,100",
-  "coordinates": {
-    "latitude": "36.138948",
-    "longitude": "-115.161641"
-  },
   "address": {
     "street": "2700 Las Vegas Blvd S Unit 3604,",
     "locality": "Las Vegas",
@@ -317,9 +313,6 @@ The structure of each item in Realtor products looks like this:
     }
   ],
   "overview": {
-    "noise": "",
-    "femaZone": "X",
-    "floorFactor": "1",
     "Property Type": "Condo",
     "Days on Realtor.com": "29 Days",
     "Year Built": "2006",
