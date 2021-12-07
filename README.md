@@ -28,7 +28,6 @@ This scraper is under active development. If you have any feature requests you c
 
 ### Incoming Changes
 
--   Fetching property historical data
 -   Fetch Realtor agents
 
 ## Setup & Usage
