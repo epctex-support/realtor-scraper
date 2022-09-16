@@ -24,27 +24,12 @@ Don't worry when you get little bit different properties than you saw in browser
 
 ## Bugs, fixes, updates and changelog
 
-This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/tugkan/realtor-scraper/issues).
-
-### Incoming Changes
-
--   Fetch Realtor agents
+This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/epctex/realtor-scraper/issues).
 
 ## Setup & Usage
 
 You can see how this actor works in this video:
 
-### Start URLs
-
-[![Apify - Realtor Scraper - Using Start URLs](https://img.youtube.com/vi/BV5IjXYtFlw/0.jpg)](https://www.youtube.com/watch?v=BV5IjXYtFlw)
-
-You can check the output of this video [here](https://api.apify.com/v2/datasets/aPEEmNEH4vJzQaxHe/items?clean=true&format=json).
-
-### Search
-
-[![Apify - Realtor Scraper - Using Search & Mode ](https://img.youtube.com/vi/s_0lgZD7m7g/0.jpg)](https://www.youtube.com/watch?v=s_0lgZD7m7g)
-
-You can check the output of this video [here](https://api.apify.com/v2/datasets/FW4mdbh8UmOWzhswP/items?clean=true&format=json).
 
 ## Input Parameters
 
@@ -113,577 +98,838 @@ The structure of each item in Realtor products looks like this:
 
 ```json
 {
-    "url": "https://www.realtor.com/realestateandhomes-detail/2700-Las-Vegas-Blvd-S-Unit-3604_Las-Vegas_NV_89109_M12056-23357",
-    "type": "Sold",
-    "soldOn": "March  1, 2021",
-    "price": {
-        "low": 319000,
-        "high": 319000
-    },
-    "beds": "2",
-    "baths": "2",
-    "sqft": "1,100",
-    "address": {
-        "street": "2700 Las Vegas Blvd S Unit 3604,",
-        "locality": "Las Vegas",
-        "region": "NV",
-        "postalCode": "89109"
-    },
-    "photos": [
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3433523426xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2960903669xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m1139842363xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2689214255xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3524626986xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2848963819xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2411300949xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m804131764xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3758438252xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2102570235xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m173675823xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3887120529xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m838061303xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m956392587xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3440719059xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2068669946xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2909057827xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m334569709xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3081227089xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m636682407xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m1669221286xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m492254240xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m1800078129xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3866255466xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3211244585xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3955207768xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m616016766xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2511157008xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m285756502xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m1026782433xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m1825795577xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m1327214018xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m1550604937xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m4035350925xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2939373531xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m1576324972xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m1689968182xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3028017238xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3807718841xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2013158385xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3753635681xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m750831483xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3025805401xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2622234092xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3808681262xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m3970338978xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m2752466096xd-w1020_h770_q80.jpg",
-        "https://ap.rdcpix.com/f45992b5ca48afac9a9ff447d1ad0e06l-m531841736xd-w1020_h770_q80.jpg"
-    ],
-    "breadcrumbs": ["Nevada", "Clark County", "Las Vegas", "Las-Vegas Blvd"],
-    "nearbySchools": [
-        {
-            "rating": 5,
-            "name": "John S Park Elementary School",
-            "grades": "PK–5",
-            "distance": "1.5 mi"
+  "url": "https://www.realtor.com/realestateandhomes-detail/4368-Seville-St_Las-Vegas_NV_89121_M14226-64517",
+  "status": "sold",
+  "id": "1422664517",
+  "soldOn": "2022-06-08",
+  "lastSoldPrice": 485000,
+  "listPrice": null,
+  "baths": 3,
+  "baths_3qtr": null,
+  "baths_full": 2,
+  "baths_full_calc": 2,
+  "baths_half": 1,
+  "baths_max": null,
+  "baths_min": null,
+  "baths_partial_calc": 1,
+  "baths_total": 3,
+  "beds": 4,
+  "beds_max": null,
+  "beds_min": null,
+  "construction": null,
+  "cooling": "Central",
+  "exterior": "Frame/Stucco",
+  "fireplace": "Yes",
+  "garage": null,
+  "garage_max": null,
+  "garage_min": null,
+  "garage_type": "Built In",
+  "heating": "Forced Air",
+  "logo": null,
+  "lot_sqft": 9148,
+  "name": null,
+  "pool": null,
+  "roofing": "Composition Shingle",
+  "rooms": 9,
+  "sqft": 2752,
+  "sqft_max": null,
+  "sqft_min": null,
+  "stories": 2,
+  "styles": null,
+  "sub_type": null,
+  "text": null,
+  "type": "single_family",
+  "units": null,
+  "year_built": 1975,
+  "year_renovated": 1975,
+  "zoning": "R-1",
+  "coordinates": {
+    "latitude": 36.110005,
+    "longitude": -115.077626
+  },
+  "address": {
+    "street": "4368 Seville St",
+    "locality": "Las Vegas",
+    "region": "NV",
+    "postalCode": "89121"
+  },
+  "photos": null,
+  "nearbySchools": {
+    "schools": [
+      {
+        "coordinate": {
+          "lat": 36.11256,
+          "lon": -115.072924
         },
-        {
-            "rating": 5,
-            "name": "John C  Fremont Middle School",
-            "grades": "6–8",
-            "distance": "1.4 mi"
+        "distance_in_miles": 0.3,
+        "district": {
+          "id": "06188571441",
+          "name": "Clark County School District"
         },
-        {
-            "rating": 4,
-            "name": "Ed W Clark High School",
-            "grades": "9–12",
-            "distance": "2.0 mi"
+        "education_levels": [
+          "elementary"
+        ],
+        "funding_type": "public",
+        "grades": [
+          "PK",
+          "K",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "greatschools_id": "3200120",
+        "id": "0745716001",
+        "name": "William E  Ferron Elementary School",
+        "nces_code": "320006000118",
+        "parent_rating": 4,
+        "rating": 5,
+        "review_count": 7,
+        "slug_id": "William-E-Ferron-Elementary-School-0745716001",
+        "student_count": 647
+      },
+      {
+        "coordinate": {
+          "lat": 36.106733,
+          "lon": -115.090665
         },
-        {
-            "rating": 4,
-            "name": "Rex Bell Elementary School",
-            "grades": "PK–5",
-            "distance": "1.1 mi"
+        "distance_in_miles": 0.8,
+        "district": {
+          "id": "06188571441",
+          "name": "Clark County School District"
         },
-        {
-            "rating": 3,
-            "name": "Innovations International Charter School of NV",
-            "grades": "6–12",
-            "distance": "2.0 mi"
+        "education_levels": [
+          "middle"
+        ],
+        "funding_type": "public",
+        "grades": [
+          "6",
+          "7",
+          "8"
+        ],
+        "greatschools_id": "3200020",
+        "id": "0745714551",
+        "name": "C W Woodbury Middle School",
+        "nces_code": "320006000017",
+        "parent_rating": 4,
+        "rating": 2,
+        "review_count": 9,
+        "slug_id": "C-W-Woodbury-Middle-School-0745714551",
+        "student_count": 904
+      },
+      {
+        "coordinate": {
+          "lat": 36.119938,
+          "lon": -115.087966
         },
-        {
-            "rating": 10,
-            "name": "Las Vegas Academy Of Int'l Studies  Performing And School",
-            "grades": "9–12",
-            "distance": "2.2 mi"
+        "distance_in_miles": 0.9,
+        "district": {
+          "id": "06188571441",
+          "name": "Clark County School District"
         },
-        {
-            "rating": null,
-            "name": "Trinity Christian Private Schools",
-            "grades": "PK–6",
-            "distance": "1.2 mi"
+        "education_levels": [
+          "high"
+        ],
+        "funding_type": "public",
+        "grades": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "greatschools_id": "3200021",
+        "id": "0745714561",
+        "name": "Chaparral High School",
+        "nces_code": "320006000018",
+        "parent_rating": 4,
+        "rating": 3,
+        "review_count": 7,
+        "slug_id": "Chaparral-High-School-0745714561",
+        "student_count": 2384
+      },
+      {
+        "coordinate": {
+          "lat": 36.117541,
+          "lon": -115.092576
         },
-        {
-            "rating": null,
-            "name": "Academy For Learning Private School",
-            "grades": "K–12",
-            "distance": "1.3 mi"
-        }
-    ],
-    "neighborhood": {
-        "Median Listing Price": "$324,900",
-        "Price Per Sq Ft": "$187"
-    },
-    "overview": {
-        "Status": "Sold",
-        "Price/Sq Ft": "$290",
-        "Type": "Condo/Townhome/Row Home/Co-Op",
-        "Built": "2006"
-    },
-    "marketSummary": [
-        {
-            "label": "Less expensive than nearby properties",
-            "value": "1.82%"
+        "distance_in_miles": 1,
+        "district": {
+          "id": "06188571421",
+          "name": null
         },
-        {
-            "label": "Neighborhood Median Price",
-            "value": "$324,900"
-        },
-        {
-            "label": "Days since last sold",
-            "value": "17"
-        }
-    ],
-    "publicRecords": [
-        "Beds: 2",
-        "Rooms: 4",
-        "House size: 1,100 sq ft",
-        "Stories: 1",
-        "Heating: Forced Air",
-        "Cooling: Central",
-        "Year built: 2006",
-        "Year renovated: 2006",
-        "Property type: Condo",
-        "Style: Condo/Apartment",
-        "Date updated: 03/12/2021"
+        "education_levels": [
+          "elementary",
+          "middle"
+        ],
+        "funding_type": "private",
+        "grades": [
+          "K",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "greatschools_id": "3200710",
+        "id": "0745724421",
+        "name": "Mt Olive Luteran School",
+        "nces_code": "A0106133",
+        "parent_rating": 5,
+        "rating": null,
+        "review_count": 4,
+        "slug_id": "Mt-Olive-Luteran-School-0745724421",
+        "student_count": 59
+      }
     ]
-}
-```
-
-###For Sale Properties
-
-```json
-{
-    "url": "https://www.realtor.com/realestateandhomes-detail/9101-Alta-Dr-Unit-304_Las-Vegas_NV_89145_M24672-57224",
-    "type": "For Sale",
-    "price": {
-        "low": 1500000,
-        "high": 1500000
-    },
-    "beds": "3",
-    "baths": "3.5",
-    "sqft": "3,100",
-    "sqftlot": "",
-    "coordinates": {
-        "latitude": "36.166961",
-        "longitude": "-115.291125"
-    },
-    "address": {
-        "address": "9101 Alta Dr Unit 304, Las Vegas, NV, 89145"
-    },
-    "photos": [
-        "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m2895103670od-w1024_h768.jpg",
-        "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m3563180654od-w1024_h768.jpg",
-        "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m2895103670od-w1024_h768.jpg",
-        "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m3563180654od-w1024_h768.jpg",
-        "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m2895103670od-w1024_h768.jpg",
-        "https://ap.rdcpix.com/b04156c06d4cfb4e4b2164b7688c8a9cl-m3563180654od-w1024_h768.jpg"
-    ],
-    "breadcrumbs": [
-        "Nevada",
-        "Clark County",
-        "Las Vegas",
-        "9101 Alta Dr Unit 304"
-    ],
-    "nearbySchools": [
+  },
+  "neighborhood": null,
+  "local": {
+    "flood": {
+      "firststreet_url": "https://riskfactor.com/property/4368-seville-st-las-vegas-nevada-89121/321219289_fsid/flood?utm_source=realtor",
+      "fsid": "321219289",
+      "flood_factor_score": 1,
+      "flood_factor_severity": "minimal",
+      "environmental_risk": 1,
+      "trend_direction": 0,
+      "fema_zone": [
+        "X"
+      ],
+      "insurance_requirement": "recommended",
+      "flood_trend": "This property’s flood risk is not changing.",
+      "flood_trend_paragraph": "This property’s risk of flood is <b>not changing</b>.",
+      "flood_insurance_text": "As this property is located in FEMA Zone X, flood insurance is not federally required to obtain a mortgage. You may want to purchase flood insurance to protect your home. Explore quotes from <b>5 providers</b> that offer flood insurance from <b>$435</b> to <b>$905</b> per year.",
+      "insurance_rates": [
         {
-            "rating": 9,
-            "name": "John W Bonner Elementary School",
-            "grades": "PK - 5",
-            "distance": "2.1"
-        },
-        {
-            "rating": 7,
-            "name": "Palo Verde High School",
-            "grades": "9 - 12",
-            "distance": "2.3"
-        },
-        {
-            "rating": 8,
-            "name": "Sig Rogich Middle School",
-            "grades": "6 - 8",
-            "distance": "2.6"
+          "provider_url": "https://1str.ee/t/hippo/flood/321219289?source=realtor",
+          "provider_name": "Hippo Insurance Agency, LLC",
+          "provider_logo": "https://assets.floodfactor.com/insurance/hippo.png",
+          "expires": null,
+          "price": null,
+          "home_coverage": 250000,
+          "contents_coverage": 100000,
+          "disclaimer": null
         }
-    ],
-    "overview": {
-        "Property Type": "Condo",
-        "Days on Realtor.com": "29 Days",
-        "Year Built": "2006",
-        "Price per sqft": "$484",
-        "Status": "For Sale"
+      ]
     },
-    "description": "Incredible Lemar Efaw 3rd floor trophy home. This 3, 100 sqft home features a 3 bed 3.5 bath floor plan with den! This home has been treated to world class upgrades including petrified wood inlaid tile, custom lighting fixtures, custom horizontal fireplace, bespoke wall treatments & more. Custom tile work includes leather & glass beaded selections. The owners suite offers gorgeous mountain views & an extended walk in closet. A gourmet chef kitchen with crisp white cabinetry, contrasting island & SS appliance suite. Updated LED lighting adorn each room with custom ceiling soffits, custom built-ins & a full-size washer & dryer. This home is complete with a 2 car enclosed garage.One Queensridge Place offers resort style amenities with daily complimentary coffee bar, in/out pool & spa, billiards, conference & media room, wine cellar & Poker room. Fitness center featured Pilates/Yoga studio & Men & Womens Roman style spa with steam & sauna.",
-    "features": [
+    "noise": {
+      "score": 73,
+      "noise_categories": [
         {
-            "label": "Bedrooms",
-            "values": ["Bedrooms: 3"]
+          "text": "Low",
+          "type": "airport"
         },
         {
-            "label": "Other Rooms",
-            "values": ["Total Rooms: 7"]
+          "text": "High",
+          "type": "traffic"
         },
         {
-            "label": "Bathrooms",
-            "values": [
-                "Total Bathrooms: 4",
-                "Full Bathrooms: 2",
-                "1/2 Bathrooms: 1",
-                "3/4 Bathrooms: 1"
-            ]
+          "text": "Low",
+          "type": "local"
         },
         {
-            "label": "Appliances",
-            "values": [
-                "Dishwasher",
-                "Dryer",
-                "Garbage Disposer",
-                "Microwave",
-                "Refrigerator",
-                "Refrigerator - Wine Storage",
-                "Washer"
-            ]
-        },
-        {
-            "label": "Heating and Cooling",
-            "values": ["Heating Features: Fireplace"]
-        },
-        {
-            "label": "Interior Features",
-            "values": ["Flooring: Tile - Stone, Tile or Stone"]
-        },
-        {
-            "label": "Garage and Parking",
-            "values": ["Parking Features: Valet"]
-        },
-        {
-            "label": "Home Features",
-            "values": ["View: City, Mountain"]
-        },
-        {
-            "label": "Other Property Info",
-            "values": [
-                "Annual Tax Amount: 8314",
-                "County: Clark County",
-                "Directions: From Summerlin Parkway and Rampart Blvd. South on Rampart. Right (West) on Alta Drive. Left (South) at One Queensridge Place community entrance.",
-                "Source Property Type: Common Interest",
-                "Property Subtype: condo",
-                "Source Neighborhood: One Queensridge Place Phase 1",
-                "Parcel Number: 138-32-213-029",
-                "Subdivision: One Queensridge Place Phase 1",
-                "Property Subtype: Condominium",
-                "Source System Name: C2C"
-            ]
-        },
-        {
-            "label": "Building and Construction",
-            "values": ["Year Built: 2006", "Property Age: 15"]
+          "text": "Medium",
+          "type": "score"
         }
-    ],
-    "neighborhood": {
-        "Median Listing Price": "$795,000",
-        "Price Per Sq Ft": "$241"
+      ]
+    },
+    "wildfire": {
+      "fsid": "321219289",
+      "fire_factor_score": 1,
+      "fire_factor_severity": "Minimal",
+      "fire_cumulative_30": null,
+      "fire_trend": "This property’s wildfire risk is not changing.",
+      "fire_trend_paragraph": "This property's risk of wildfire is <b>not changing</b>.",
+      "usfs_relative_risk": "This property is located in a county with an average wildfire risk greater than 85% counties in the US.",
+      "firststreet_url": "https://riskfactor.com/property/4368-seville-st-las-vegas-nevada-89121/321219289_fsid/fire?utm_source=realtor",
+      "fire_insurance_text": "Invest in insurance that covers hazards including wildfire to reduce your financial risk and recover more quickly after a fire. To protect your home, explore quotes from <b>7 providers</b> that offer insurance with wildfire coverage.",
+      "insurance_rates": [
+        {
+          "provider_logo": "https://assets.floodfactor.com/insurance/hippo.png",
+          "provider_url": "https://1str.ee/t/hippo/fire/321219289?source=realtor"
+        }
+      ]
     }
-}
-```
-
-###Rental Properties
-
-```json
-{
-    "url": "https://www.realtor.com/realestateandhomes-detail/6655-S-Fort-Apache-Rd_Las-Vegas_NV_89148_M14497-02317",
-    "type": "Rental",
-    "price": {
-        "low": 1256,
-        "high": 1509
+  },
+  "history": [
+    {
+      "date": "2022-06-08",
+      "event_name": "Sold",
+      "price": 485000,
+      "price_sqft": 176.23546511627907,
+      "source_listing_id": null,
+      "source_name": "Public Record",
+      "listing": null
     },
-    "beds": "1 - 2",
-    "baths": "1 - 2",
-    "sqft": "749 - 1,212",
-    "pets": "Pets",
-    "coordinates": {
-        "latitude": "36.067561",
-        "longitude": "-115.298376"
-    },
-    "address": {
-        "name": "MARTIN APARTMENT HOMES",
-        "street": "6655 S Fort Apache Rd,6655 S Fort Apache Rd",
-        "locality": "Las VegasLas Vegas",
-        "region": "NVNV",
-        "postalCode": "8914889148"
-    },
-    "photos": [
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f2123701071xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f1534942297xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f878652904xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f731565892xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f1266638027xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f3306876858xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f3594548308xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f1628626175xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f3750668450xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f684007143xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f2833146668xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f638103031xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f3355794822xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f1380261674xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f2554417832xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f3728746811xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f872673047xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f3693420232xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f2117598234xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f2438733769xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f2289071579xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f46009409xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f1762979708xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f1213514775xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f2176171169xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f152252890xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f527547253xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f3655246583xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f682254238xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f3270340978xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f1552785935xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f711105821xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f3919044809xd-w1020_h770_q80.jpg",
-        "https://ar.rdcpix.com/ce5b316f0a2359dc90215bb9c77d21a9c-f2003418685xd-w1020_h770_q80.jpg"
-    ],
-    "breadcrumbs": [
-        "Nevada",
-        "Clark County",
-        "Las Vegas",
-        "6655 S Fort Apache Rd"
-    ],
-    "features": [
-        {
-            "title": "Community Features",
-            "values": [
-                "* In Select Homes",
-                "* Per plan, see leasing associate for details",
-                "** Some restrictions apply.",
-                "24 Hour Pool",
-                "24-hour emergency maintenance services",
-                "4 single-level floor plans",
-                "Adult-height vanity with full-size mirror",
-                "Air Conditioning",
-                "Balcony",
-                "Cabana",
-                "Cable Ready",
-                "Car Wash Area",
-                "Carpet",
-                "Cats Allowed",
-                "Ceiling Fans",
-                "Community BBQ",
-                "Complimentary daily refreshments and coffee bar",
-                "Controlled Access",
-                "Courtesy Patrol",
-                "Designer-selected interior color schemes",
-                "Detached & Direct Access Garages Offered",
-                "Digital programmable thermostat",
-                "Dining Room",
-                "Dishwasher",
-                "Disposal",
-                "Dogs Allowed",
-                "Double Pane Windows",
-                "Easy care granite-look laminate countertops",
-                "Energy efficient low E dual glazed windows",
-                "Faux wood blinds on most windows",
-                "Fitness Center",
-                "Fitness Center",
-                "Frameless medicine cabinet",
-                "Freezer",
-                "Gated",
-                "Grill",
-                "Hardwood Floors",
-                "Heating",
-                "High Speed Internet Access",
-                "Ice Maker",
-                "Impressive 9' volume ceilings*",
-                "Kitchen",
-                "Large garden style soaking tub with shower",
-                "Linen Closet",
-                "Linen, coat and storage closets*",
-                "Lounge",
-                "Lush entry common area landscaping",
-                "Media Center/Movie Theatre",
-                "Media Room",
-                "Microwave",
-                "Mountain and city views*",
-                "Multi Use Room",
-                "One and two bedroom plans",
-                "Online Payments Available",
-                "Oven",
-                "Oversized closets",
-                "Package Service",
-                "Pantry",
-                "Patio",
-                "Pool",
-                "Premium GE® appliances package",
-                "Print & Connect",
-                "Private direct access garages*",
-                "Private patios and balconies*",
-                "Property Manager on Site",
-                "Range",
-                "Recycling",
-                "Renters Insurance Program",
-                "Resident activities",
-                "Security System",
-                "Security alarm system",
-                "Smoke Detectors",
-                "Spa",
-                "Spa Shower",
-                "Sprinkler System",
-                "Stylish cabinetry with polished chrome hardware",
-                "Trash Pickup - Door to Door",
-                "Tub/Shower",
-                "Views",
-                "Vinyl Flooring",
-                "Washer/Dryer",
-                "Wi-Fi",
-                "Wi-Fi at Pool and Clubhouse"
-            ]
+    {
+      "date": "2022-05-13",
+      "event_name": "Listing removed",
+      "price": 0,
+      "price_sqft": null,
+      "source_listing_id": "2393319",
+      "source_name": "LasVegas",
+      "listing": {
+        "list_price": 475000,
+        "last_status_change_date": "2022-05-13T03:08:06Z",
+        "last_update_date": "2022-05-05T08:24:18Z",
+        "status": "off_market",
+        "list_date": "2022-05-05T08:04:46Z",
+        "listing_id": "2942756233",
+        "suppression_flags": {
+          "has_suppress_sold_info": true
         },
-        {
-            "title": "Unit Features",
-            "values": [
-                "Air Conditioning",
-                "Cable or Satellite TV",
-                "Carport",
-                "Ceiling Fan",
-                "Courtyard",
-                "Dishwasher",
-                "Disposal",
-                "Garage",
-                "Microwave",
-                "Patio/Balcony",
-                "Refrigerator",
-                "View"
-            ]
+        "photos": [
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3082072648s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1827141646s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m4254921847s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1151405011s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3806640650s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3942876455s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1661349441s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m4047814041s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2160077492s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1263782816s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2746061833s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m4107406175s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2910718438s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3028123988s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3813972027s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1421957916s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3431148020s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3856479392s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1411435325s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m491581803s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2268681331s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2922686144s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2301519764s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m793117848s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m40245287s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1936417894s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3072168545s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m4212323395s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m202704110s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m563546097s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1683360307s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2833466280s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m341779919s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2434645635s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m320319668s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3619621644s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m690698608s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m593262984s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2669032613s.jpg"
+          }
+        ],
+        "description": {
+          "text": "Spacious 2 Story, 4 Bed, 3 Bath, 2 car. Separate Dining, Family, and Living Room. RV Parking, 4 Car Spot Drive Way, Oversized 4th Bedroom Gym/Loft. Hard Wood Floor Upstairs, Tile Downstairs, Downstairs Laundry. Master Balcony, Above Ground Jacuzzi, Custom Shed, 9k Sqft lot Real Green Grass, Immaculate Landscaping. All Appliances to included."
         },
-        {
-            "title": "Local Home Services",
-            "values": []
+        "advertisers": [
+          {
+            "fulfillment_id": "2931320",
+            "nrds_id": "629045097",
+            "name": "Daron Rice",
+            "email": "agentdrice@gmail.com",
+            "href": "www.LvHouseListings.com",
+            "slogan": "with the Jacobs Group",
+            "office": {
+              "fulfillment_id": "1211952",
+              "name": "Simply Vegas",
+              "email": "simplyvegasrealestate@gmail.com",
+              "href": "",
+              "slogan": "",
+              "out_of_community": null,
+              "application_url": null,
+              "mls_set": "O-LVNV-SVRE"
+            },
+            "broker": {
+              "fulfillment_id": "2931292",
+              "name": "Simply Vegas",
+              "accent_color": "#fc7b03",
+              "logo": "https://ap.rdcpix.com/1974843881/951d73b0132029aff5898118d6e9729ak-c0s.jpg"
+            },
+            "type": "seller",
+            "mls_set": "A-LVNV-226276"
+          }
+        ],
+        "buyers": null,
+        "source": {
+          "id": "LVNV",
+          "agents": [
+            {
+              "agent_id": "226276",
+              "agent_name": "Daron Rice",
+              "office_id": "SVRE",
+              "office_name": null,
+              "office_phone": null,
+              "type": "seller"
+            }
+          ]
         }
-    ],
-    "nearbySchools": [
-        {
-            "rating": 5,
-            "name": "Wayne N Tanaka Elementary School",
-            "grades": "PK–5",
-            "distance": "0.5 mi"
-        },
-        {
-            "rating": 6,
-            "name": "Wilbur & Theresa Faiss Middle School",
-            "grades": "6–8",
-            "distance": "0.4 mi"
-        },
-        {
-            "rating": 4,
-            "name": "Sierra Vista High School",
-            "grades": "9–12",
-            "distance": "2.0 mi"
-        },
-        {
-            "rating": 8,
-            "name": "Kathy L. Batterman Elementary School",
-            "grades": "PK–5",
-            "distance": "1.3 mi"
-        },
-        {
-            "rating": null,
-            "name": "American Preparatory Academy School",
-            "grades": "K–12",
-            "distance": "1.5 mi"
-        },
-        {
-            "rating": 4,
-            "name": "Durango High School",
-            "grades": "9–12",
-            "distance": "3.2 mi"
-        },
-        {
-            "rating": null,
-            "name": "Bishop Gorman Private School",
-            "grades": "9–12",
-            "distance": "1.5 mi"
-        },
-        {
-            "rating": null,
-            "name": "Merryhill Elementary Private School",
-            "grades": "K–5",
-            "distance": "2.3 mi"
-        }
-    ],
-    "neighborhood": {
-        "Median Rental Price": "$1,600",
-        "Median Listing Price": "$324,900"
+      }
     },
-    "overview": {
-        "leaseTerms": "None",
-        "listingManagedBy": "FPI Management",
-        "Type": "Apartment",
-        "Built": "2016"
-    },
-    "description": "Situated in a sophisticated and beautiful premier neighborhood, Martin offers a gated entry, a selection of apartment homes with views of the mountains and the exciting Las Vegas Strip. It is ideally located in the heart of it all and just minutes from a variety of restaurants, eclectic boutiques, shopping centers, conveniences, and even the Wet-n-Wild theme park. Martin's collection of stylish 1 and 2 bedroom homes features stylish interiors with the latest finishes including sleek cabinetry, black energy-efficient appliances, granite-look countertops, and oversized windows. You'll enjoy a resort-style pool with cabana, fitness center and the W Lounge, where you can relax and socialize with friends and even get free Wi-Fi! Martin Apartment Home is professionally managed by FPI.",
-    "floorPlans": [
-        {
-            "title": "1 Bedroom (1 plan )",
-            "plans": [
-                {
-                    "name": "Chaparral",
-                    "bath": "1 ba",
-                    "sqft": "749 sq ft",
-                    "price": "$1,256",
-                    "availability": "Available in April 2021"
-                }
-            ]
+    {
+      "date": "2022-05-05",
+      "event_name": "Listed",
+      "price": 475000,
+      "price_sqft": 172.60174418604652,
+      "source_listing_id": "2393319",
+      "source_name": "LasVegas",
+      "listing": {
+        "list_price": 475000,
+        "last_status_change_date": "2022-05-13T03:08:06Z",
+        "last_update_date": "2022-05-05T08:24:18Z",
+        "status": "off_market",
+        "list_date": "2022-05-05T08:04:46Z",
+        "listing_id": "2942756233",
+        "suppression_flags": {
+          "has_suppress_sold_info": true
         },
-        {
-            "title": "2 Bedroom (3 plans )",
-            "plans": [
-                {
-                    "name": "Avalon",
-                    "bath": "2 ba",
-                    "sqft": "1,212 sq ft",
-                    "price": "$1,424",
-                    "availability": "Available"
-                },
-                {
-                    "name": "Carson",
-                    "bath": "2 ba",
-                    "sqft": "1,203 sq ft",
-                    "price": "$1,505",
-                    "availability": "Available in March 2021"
-                },
-                {
-                    "name": "Aurora",
-                    "bath": "2 ba",
-                    "sqft": "1,016 sq ft",
-                    "price": "$1,509",
-                    "availability": "Check Availability"
-                }
-            ]
+        "photos": [
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3082072648s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1827141646s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m4254921847s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1151405011s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3806640650s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3942876455s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1661349441s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m4047814041s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2160077492s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1263782816s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2746061833s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m4107406175s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2910718438s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3028123988s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3813972027s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1421957916s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3431148020s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3856479392s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1411435325s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m491581803s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2268681331s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2922686144s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2301519764s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m793117848s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m40245287s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1936417894s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3072168545s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m4212323395s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m202704110s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m563546097s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m1683360307s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2833466280s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m341779919s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2434645635s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m320319668s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m3619621644s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m690698608s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m593262984s.jpg"
+          },
+          {
+            "href": "http://ap.rdcpix.com/804a9d1ab2622363f784ffddb59bdb93l-m2669032613s.jpg"
+          }
+        ],
+        "description": {
+          "text": "Spacious 2 Story, 4 Bed, 3 Bath, 2 car. Separate Dining, Family, and Living Room. RV Parking, 4 Car Spot Drive Way, Oversized 4th Bedroom Gym/Loft. Hard Wood Floor Upstairs, Tile Downstairs, Downstairs Laundry. Master Balcony, Above Ground Jacuzzi, Custom Shed, 9k Sqft lot Real Green Grass, Immaculate Landscaping. All Appliances to included."
+        },
+        "advertisers": [
+          {
+            "fulfillment_id": "2931320",
+            "nrds_id": "629045097",
+            "name": "Daron Rice",
+            "email": "agentdrice@gmail.com",
+            "href": "www.LvHouseListings.com",
+            "slogan": "with the Jacobs Group",
+            "office": {
+              "fulfillment_id": "1211952",
+              "name": "Simply Vegas",
+              "email": "simplyvegasrealestate@gmail.com",
+              "href": "",
+              "slogan": "",
+              "out_of_community": null,
+              "application_url": null,
+              "mls_set": "O-LVNV-SVRE"
+            },
+            "broker": {
+              "fulfillment_id": "2931292",
+              "name": "Simply Vegas",
+              "accent_color": "#fc7b03",
+              "logo": "https://ap.rdcpix.com/1974843881/951d73b0132029aff5898118d6e9729ak-c0s.jpg"
+            },
+            "type": "seller",
+            "mls_set": "A-LVNV-226276"
+          }
+        ],
+        "buyers": null,
+        "source": {
+          "id": "LVNV",
+          "agents": [
+            {
+              "agent_id": "226276",
+              "agent_name": "Daron Rice",
+              "office_id": "SVRE",
+              "office_name": null,
+              "office_phone": null,
+              "type": "seller"
+            }
+          ]
         }
-    ]
+      }
+    }
+  ],
+  "taxHistory": [
+    {
+      "assessment": {
+        "building": 32839,
+        "land": 25900,
+        "total": 58739
+      },
+      "market": {
+        "building": 93826,
+        "land": 74000,
+        "total": 167826
+      },
+      "tax": 1176,
+      "year": 2021
+    },
+    {
+      "assessment": {
+        "building": 33385,
+        "land": 25200,
+        "total": 58585
+      },
+      "market": {
+        "building": 95386,
+        "land": 72000,
+        "total": 167386
+      },
+      "tax": 1089,
+      "year": 2020
+    },
+    {
+      "assessment": {
+        "building": 33808,
+        "land": 23100,
+        "total": 56908
+      },
+      "market": {
+        "building": 96594,
+        "land": 66000,
+        "total": 162594
+      },
+      "tax": 1057,
+      "year": 2019
+    },
+    {
+      "assessment": {
+        "building": 32970,
+        "land": 21700,
+        "total": 54670
+      },
+      "market": {
+        "building": 94200,
+        "land": 62000,
+        "total": 156200
+      },
+      "tax": 1026,
+      "year": 2018
+    },
+    {
+      "assessment": {
+        "building": 34118,
+        "land": 18200,
+        "total": 52318
+      },
+      "market": {
+        "building": 97480,
+        "land": 52000,
+        "total": 149480
+      },
+      "tax": 1534,
+      "year": 2017
+    },
+    {
+      "assessment": {
+        "building": 35281,
+        "land": 17500,
+        "total": 52781
+      },
+      "market": {
+        "building": 100803,
+        "land": 50000,
+        "total": 150803
+      },
+      "tax": 973,
+      "year": 2016
+    },
+    {
+      "assessment": {
+        "building": 35502,
+        "land": 12250,
+        "total": 47752
+      },
+      "market": {
+        "building": 101434,
+        "land": 35000,
+        "total": 136434
+      },
+      "tax": 970,
+      "year": 2015
+    },
+    {
+      "assessment": {
+        "building": 34968,
+        "land": 10500,
+        "total": 45468
+      },
+      "market": {
+        "building": 99909,
+        "land": 30000,
+        "total": 129909
+      },
+      "tax": 942,
+      "year": 2014
+    },
+    {
+      "assessment": {
+        "building": 34850,
+        "land": 6300,
+        "total": 41150
+      },
+      "market": {
+        "building": 99571,
+        "land": 18000,
+        "total": 117571
+      },
+      "tax": 992,
+      "year": 2013
+    },
+    {
+      "assessment": {
+        "building": 23954,
+        "land": 6300,
+        "total": 30254
+      },
+      "market": {
+        "building": 68440,
+        "land": 18000,
+        "total": 86440
+      },
+      "tax": 887,
+      "year": 2012
+    },
+    {
+      "assessment": {
+        "building": 35179,
+        "land": 7000,
+        "total": 42179
+      },
+      "market": {
+        "building": 100511,
+        "land": 20000,
+        "total": 120511
+      },
+      "tax": 1237,
+      "year": 2011
+    },
+    {
+      "assessment": {
+        "building": 37267,
+        "land": 7000,
+        "total": 44267
+      },
+      "market": {
+        "building": 106477,
+        "land": 20000,
+        "total": 126477
+      },
+      "tax": 1301,
+      "year": 2010
+    },
+    {
+      "assessment": {
+        "building": 37189,
+        "land": 36400,
+        "total": 73589
+      },
+      "market": {
+        "building": 106254,
+        "land": 104000,
+        "total": 210254
+      },
+      "tax": 1478,
+      "year": 2008
+    },
+    {
+      "assessment": {
+        "building": 35597,
+        "land": 41300,
+        "total": 76897
+      },
+      "market": {
+        "building": 101706,
+        "land": 118000,
+        "total": 219706
+      },
+      "tax": 1435,
+      "year": 2007
+    }
+  ],
+  "advertisers": null,
+  "details": null
 }
 ```
