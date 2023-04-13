@@ -68,7 +68,8 @@ The actor optimized to run blazing fast and scrape many as properties as possibl
     "startUrls": [
         "https://www.realtor.com/realestateandhomes-detail/9325-W-Desert-Inn-Rd-Apt-116_Las-Vegas_NV_89117_M25429-00790",
         "https://www.realtor.com/realestateandhomes-detail/6655-S-Fort-Apache-Rd_Las-Vegas_NV_89148_M14497-02317",
-        "https://www.realtor.com/realestateandhomes-detail/2700-Las-Vegas-Blvd-S-Unit-3604_Las-Vegas_NV_89109_M12056-23357"
+        "https://www.realtor.com/realestateandhomes-detail/2700-Las-Vegas-Blvd-S-Unit-3604_Las-Vegas_NV_89109_M12056-23357",
+        "https://www.realtor.com/realestateagents/5a28883df695ab0010dfe28b"
     ],
     "search": "Las Vegas",
     "mode": "BUY",
