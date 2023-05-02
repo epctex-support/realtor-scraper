@@ -18,7 +18,7 @@ The Realtor data scraper supports the following features:
 
 -   Scrape properties by filter - Auto detection of URLs helps you to directly copy/paste the URLs into the scraper to apply any filtering you like.
 
--   Scrape agents and their profiles - Directly fetch any agent profile with ease!
+-   Scrape listings of agents - Directly fetch any listing of agent profiles with ease!
 
 #### Realtor specific
 
@@ -35,21 +35,25 @@ You can see how this actor works in this video:
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on Realtor that should be visited. Required fields are:
+The input of this scraper should be JSON containing the list of pages on Realtor that should be visited. Possible fields are:
 
-| Field                | Type    | Description                                                                                                                                                                                               |
-| -------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| startUrls            | Array   | (optional) List of Realtor URLs. You should only provide property detail or search URLs                                                                                                                   |
-| maxItems             | Integer | (optional) You can limit scraped products. This should be useful when you search through the big subcategories.                                                                                           |
-| endPage              | Integer | (optional) Final number of page that you want to scrape. Default is `Infinite`.                                                                                                                           |
-| search               | String  | (optional) Keyword that can be searched in Realtor search engine. When it is present, `mode` must be used as well.                                                                                        |
-| mode                 | String  | (optional) Mode of the actor. It gets the keyword from `search` parameter and initiate the search according to the mode. Can be `BUY`, `RENT` or `SOLD`. When present, `search` must be provided as well. |
-| extendOutputFunction | String  | (optional) Function that takes a JQuery handle ($) as argument and returns object with data                                                                                                               |
-| proxy                | Object  | Proxy configuration                                                                                                                                                                                       |
+- `search`: (Optional) (String) Keyword that can be searched in Realtor search engine. When it is present, `mode` must be used as well.
+
+- `startUrls`: (Optional) (Array) List of Realtor URLs. You should only provide property detail or search URLs.
+
+- `mode`: (Optional) (String) Mode of the actor. It gets the keyword from `search` parameter and initiate the search according to the mode. Can be `BUY`, `RENT` or `SOLD`. When present, `search` must be provided as well.
+
+- `endPage`: (Optional) (Number) Final number of page that you want to scrape. Default is `Infinite`. This is applies to all `search` request and `startUrls` individually.
+
+- `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
+
+- `proxy`: (Required) (Proxy Object) Proxy configuration.
+
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
-##### Tip
+### Tip
 
 When you want to have a filtering over a search URL; go to Realtor, create filters over the serach list and copy and paste the link as one of the **startUrl**.
 
@@ -934,281 +938,5 @@ The structure of each item in Realtor products looks like this:
   ],
   "advertisers": null,
   "details": null
-}
-```
-
-### Agents
-
-```json
-{
-	"type": "agent",
-	"_id": "5a28883df695ab0010dfe28c",
-	"profile_name": "Helen Woodard-agent",
-	"party_id": 426831225,
-	"fullname": "Helen Anderson",
-	"profile_description": "agent profile",
-	"role": "agent",
-	"record_status": "active",
-	"fulfillment_id": 3260100,
-	"address": {
-		"line": "1321 Laskin Road",
-		"line2": "",
-		"city": "Virginia Beach",
-		"postal_code": "23451",
-		"state_code": "VA",
-		"state": "Virginia",
-		"country": ""
-	},
-	"mls": [
-		{
-			"abbreviation": "FAR_19861E9C",
-			"primary": false,
-			"license_number": "320773",
-			"type": "A",
-			"member": {
-				"id": "FAR_1EF5146312D3159215F615F5139915F712D90039"
-			}
-		},
-		{
-			"abbreviation": "FAR_1E9C1E9C",
-			"primary": false,
-			"license_number": "320773",
-			"type": "A",
-			"member": {
-				"id": "FAR_1EF5146312D3159215F615F5139915F712D90039"
-			}
-		},
-		{
-			"abbreviation": "FAR_21BB21BA",
-			"primary": true,
-			"license_number": "",
-			"type": "A",
-			"member": {
-				"id": "FAR_152A14020035"
-			}
-		}
-	],
-	"office": {
-		"name": "Austin James Realty LLC",
-		"mls": [
-			{
-				"abbreviation": "FAR_19861E9C",
-				"primary": true,
-				"license_number": "",
-				"type": "O",
-				"member": {
-					"id": "FAR_1EF5146312D3159215F6"
-				}
-			},
-			{
-				"abbreviation": "FAR_1E9C1E9C",
-				"primary": false,
-				"license_number": "",
-				"type": "O",
-				"member": {
-					"id": "FAR_1EF5146312D3159215F6"
-				}
-			}
-		],
-		"phones": [
-			{
-				"type": "Office",
-				"number": "7573406022",
-				"ext": ""
-			}
-		],
-		"phone_list": {
-			"phone_1": {
-				"type": "Office",
-				"number": "7573406022",
-				"ext": ""
-			}
-		},
-		"licenses": [],
-		"feed_licenses": [],
-		"photo": {
-			"href": null
-		},
-		"slogan": null,
-		"website": null,
-		"video": null,
-		"fulfillment_id": 4608343,
-		"address": {
-			"line": "2476 NIMMO PKWY UNIT 118B",
-			"line2": "",
-			"city": "VIRGINIA BEACH",
-			"postal_code": "23456",
-			"state_code": "VA",
-			"state": "Virginia",
-			"country": "US"
-		},
-		"nrds_id": null
-	},
-	"broker": {
-		"fulfillment_id": 4572929,
-		"designations": [],
-		"name": "Austin James Realty",
-		"accent_color": "",
-		"photo": {
-			"href": ""
-		},
-		"video": ""
-	},
-	"phone_list": {
-		"phone_1": {
-			"type": "Mobile",
-			"number": "7578168383",
-			"ext": ""
-		},
-		"phone_2": {
-			"type": "Office",
-			"number": "7578168383",
-			"ext": ""
-		}
-	},
-	"id": "5a28883df695ab0010dfe28b",
-	"meta": {
-		"last_update_date": "2022-11-08T08:33:49.061Z"
-	},
-	"brokerage_fulfillment_id": 4572929,
-	"eligible_for_courtesy_leads": true,
-	"phones": [
-		{
-			"type": "Mobile",
-			"number": "7578168383",
-			"ext": "",
-			"key": "phone_1"
-		},
-		{
-			"type": "Office",
-			"number": "7578168383",
-			"ext": "",
-			"key": "phone_2"
-		}
-	],
-	"emails": [],
-	"social_media": [],
-	"zips": [
-		"23454",
-		"23455",
-		"23451",
-		"23452",
-		"23320"
-	],
-	"dotrealtor": {
-		"firstname": "",
-		"lastname": ""
-	},
-	"designations": [],
-	"languages": [],
-	"licenses": [
-		{
-			"state_code": "<![CDATA[VA]]>",
-			"country": "USA",
-			"license_number": ""
-		}
-	],
-	"specialties": [
-		""
-	],
-	"default": false,
-	"ratings": {
-		"overall_rating": 0,
-		"average_rating": 0,
-		"reviews_count": 0,
-		"overall_satisfaction": 0,
-		"recommendation_rating": 0,
-		"performance_rating": 0,
-		"testimonial_return_rate": 0,
-		"responseCount": 0,
-		"show_scores": 0
-	},
-	"recommendations": {
-		"count": 17
-	},
-	"settings": {
-		"share_contacts": false,
-		"full_access": false,
-		"recommendations": {
-			"tt": {
-				"user": "101624C6-AF23-4F54-8196-80BF87CF07A2",
-				"linked": "TRUE",
-				"updated": "1537466636"
-			}
-		},
-		"display_listings": true,
-		"far_override": false,
-		"show_stream": false,
-		"terms_of_use": false,
-		"has_dotrealtor": false,
-		"display_sold_listings": true,
-		"display_price_range": true,
-		"display_ratings": false,
-		"loaded_from_sb": false,
-		"broker_data_feed_opt_out": false,
-		"unsubscribe": {
-			"autorecs": false,
-			"recapprove": false,
-			"account_notify": false
-		},
-		"new_feature_popup_closed": {
-			"agent_left_nav_avatar_to_profile": false
-		},
-		"profile_wizard": {
-			"realsatisfied_opt_out": false,
-			"tt_opt_out": false
-		}
-	},
-	"debug": false,
-	"photo": {
-		"href": "https://ap.rdcpix.com/463463416/8669b6df62e703a669b4de26a4bdf23aa-e0s.jpg"
-	},
-	"website": "https://helenandersonrealtor.com",
-	"slogan": "",
-	"viewerRole": "agent",
-	"nickname": "",
-	"suffixname": "",
-	"title": "Agent",
-	"bio": "Helen Anderson is a resident of Virginia Beach.  Helen understands what it takes to connect the dots and navigate through the process of both buying and selling a home.  Whether you're a first-time home buyer, an investor, looking for a luxury home or selling any residential property, Helen Anderson can help you find what is important to you!\nFor more than a decade, Helen has worked in real estate industry building relationships along the way.  Before becoming a Real Estate Agent, Helen worked as a Mortgage Loan Originator & Sales Manager with a specialized focus on national homebuilder accounts and custom homebuilders.  Helen has earned numerous awards such as MVP Division, Highest Customer Satisfaction, 70% Club, Most Buyers in A Single Day and Highest Volume.  \nMost recently, Helen won 2018 Howard Hanna's Top Referring Mortgage Agent, 2018 Howard Hanna's Top Referring Title Agent, 2018 Howard Hanna's Top Referring Insurance Agent, 2018 Howard Hanna Rising Star Award, 2018 Howard Hanna's distinguished One Team One Dream Award.  \nHelen finished off 2018 winning the Hampton Roads Realtor Association 2018 Bronze Circle of Excellence Award and Hampton Roads Realtor Association 2018 Rookie of the Year Award! \nHelen’s unique experience has allowed her the privilege of learning the ins and outs of the home buying & selling process.  Helen enjoys connecting with people, listening to their real estate needs and finding out what’s important to them.  Getting out in the community, finding the right property, and guiding clients through the process of home buying or selling is essential. \nHelen is a proud mother and is active in the community with her four children.  She believes having a special needs daughter has made her a better person by teaching her patience, while sharpening her understanding and negotiating skills that are necessary to advocate for her daughter.  Autism is near and dear to Helen's heart and she believes like a fingerprint, every Autistic person is completely unique!",
-	"social_connections": {},
-	"not_updatable_by": [
-		"broker",
-		"broker_data_feed"
-	],
-	"nrds_id": "019319751",
-	"autoFixed": true,
-	"background_photo": {
-		"href": "https://ap.rdcpix.com/2144720348/05f67564d7cf0585fbe7ae8bc7c6241eg-c0s.jpg"
-	},
-	"coverPhotoEntityKey": "3260100_1578565440100",
-	"firstname": "",
-	"middlename": "",
-	"lastname": "",
-	"agent_represents": {
-		"seller": true,
-		"buyer": true
-	},
-	"user_languages": [],
-	"photoEntityKey": "3260100_1578565560213",
-	"mls_history": [
-		{
-			"abbreviation": "FAR_19861E9C",
-			"primary": false,
-			"license_number": "320773",
-			"type": "A",
-			"member": {
-				"id": "FAR_152A155815F30034"
-			},
-			"inactivation_date": "2022-08-03T10:12:00.000Z"
-		}
-	],
-	"feed_licenses": [],
-	"first_month": 0,
-	"first_year": 0,
-	"skip_set_for_update": false,
-	"team": {
-		"fulfillment_id": 0,
-		"name": ""
-	}
 }
 ```
