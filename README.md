@@ -1,3 +1,5 @@
+[https://apify.com/epctex/realtor-scraper](https://apify.com/epctex/realtor-scraper?fpr=yhdrb)
+
 # Actor - Realtor Scraper
 
 ## Realtor scraper
@@ -6,15 +8,15 @@ Since Realtor doesn't provide an API, this actor should help you to retrieve dat
 
 The Realtor data scraper supports the following features:
 
--   Scrape property details - You can scrape attributes like property images, price, features, neighborhood, nearby schools and many more. You can find details below.
+-   Scrape property details - You can scrape attributes like property images, price, features, neighborhood, nearby schools, and many more. You can find details below.
 
 -   Scrape sold properties - You can scrape sold properties through a search list.
 
--   Scrape for sale properties - If you are looking for a property which is for sale, you can directly target them.
+-   Scrape for sale properties - If you are looking for a property that is for sale, you can directly target them.
 
 -   Scrape rental properties - Rental properties can be directly targeted.
 
--   Scrape by keyword - You can use location-wise keywords to search specific search lists. Also you can directly point out rental, for sale or sold properties on this feature.
+-   Scrape by keyword - You can use location-wise keywords to search specific search lists. Also, you can directly point out rental, for sale, or sold properties on this feature.
 
 -   Scrape properties by filter - Auto detection of URLs helps you to directly copy/paste the URLs into the scraper to apply any filtering you like.
 
@@ -22,9 +24,9 @@ The Realtor data scraper supports the following features:
 
 #### Realtor specific
 
-Don't worry when you get little bit different properties than you saw in browser page. Realtor is ordering properties differently for each user.
+Don't worry when you get a little bit different properties than you saw on the browser page. Realtor is ordering properties differently for each user.
 
-## Bugs, fixes, updates and changelog
+## Bugs, fixes, updates, and changelog
 
 This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/epctex/realtor-scraper/issues).
 
@@ -37,33 +39,33 @@ You can see how this actor works in this video:
 
 The input of this scraper should be JSON containing the list of pages on Realtor that should be visited. Possible fields are:
 
-- `search`: (Optional) (String) Keyword that can be searched in Realtor search engine. When it is present, `mode` must be used as well.
+- `search`: (Optional) (String) Keyword that can be searched in the Realtor search engine. When it is present, `mode` must be used as well.
 
 - `startUrls`: (Optional) (Array) List of Realtor URLs. You should only provide property detail or search URLs.
 
-- `mode`: (Optional) (String) Mode of the actor. It gets the keyword from `search` parameter and initiate the search according to the mode. Can be `BUY`, `RENT` or `SOLD`. When present, `search` must be provided as well.
+- `mode`: (Optional) (String) Mode of the actor. It gets the keyword from `search` parameter and initiates the search according to the mode. Can be `BUY`, `RENT` or `SOLD`. When present, `search` must be provided as well.
 
-- `endPage`: (Optional) (Number) Final number of page that you want to scrape. Default is `Infinite`. This is applies to all `search` request and `startUrls` individually.
+- `endPage`: (Optional) (Number) Final number of page that you want to scrape. The default is `Infinite`. This applies to all `search` requests and `startUrls` individually.
 
 - `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
 
 - `proxy`: (Required) (Proxy Object) Proxy configuration.
 
-- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as an argument and returns an object with data.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
 ### Tip
 
-When you want to have a filtering over a search URL; go to Realtor, create filters over the serach list and copy and paste the link as one of the **startUrl**.
+When you want to have filtering over a search URL; go to Realtor, create filters over the search list, and copy and paste the link as one of the **startUrl**.
 
 If you would like to scrape only the first page of a search list or search list, then put the link for the page and have the `endPage` as 1.
 
-With the last approach that explained above you can also fetch any interval of pages. If you provide the 5th page of a search list and define the `endPage` parameter as 6 then you'll have the 5th and 6th pages only.
+With the last approach that is explained above you can also fetch any interval of pages. If you provide the 5th page of a search list and define the `endPage` parameter as 6 then you'll have the 5th and 6th pages only.
 
 ### Compute Unit Consumption
 
-The actor optimized to run blazing fast and scrape many as properties as possible. Therefore, it forefronts all property detail requests. If actor doesn't block very often it'll scrape 50 properties in 2 minutes with ~0.05-0.07 compute units.
+The actor is optimized to run blazing fast and scrape many properties as possible. Therefore, it forefronts all property detail requests. If the actor doesn't block very often it'll scrape 50 properties in 2 minutes with ~0.05-0.07 compute units.
 
 ### Realtor Scraper Input example
 
@@ -89,13 +91,13 @@ The actor optimized to run blazing fast and scrape many as properties as possibl
 During the run, the actor will output messages letting you know what is going on. Each message always contains a short label specifying which page from the provided list is currently specified.
 When items are loaded from the page, you should see a message about this event with a loaded item count and total item count for each page.
 
-If you provide incorrect input to the actor, it will immediately stop with failure state and output an explanation of what is wrong.
+If you provide incorrect input to the actor, it will immediately stop with a failure state and output an explanation of what is wrong.
 
 ## Realtor Export
 
 During the run, the actor stores results into a dataset. Each item is a separate item in the dataset.
 
-You can manage the results in any languague (Python, PHP, Node JS/NPM). See the FAQ or <a href="https://www.apify.com/docs/api" target="blank">our API reference</a> to learn more about getting results from this Realtor actor.
+You can manage the results in any language (Python, PHP, Node JS/NPM). See the FAQ or <a href="https://www.apify.com/docs/api" target="blank">our API reference</a> to learn more about getting results from this Realtor actor.
 
 ## Scraped Realtor Properties
 
@@ -942,4 +944,4 @@ The structure of each item in Realtor products looks like this:
 ```
 
 ## Contact
-Please visit us through [epctex.com](https://epctex.com) to see all the products that is available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
+Please visit us through [epctex.com](https://epctex.com) to see all the products that are available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
